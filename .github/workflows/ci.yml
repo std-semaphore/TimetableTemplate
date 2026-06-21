@@ -31,9 +31,10 @@ jobs:
           fi
 
           curl -fL "$url" -o intsdk.tar.gz
-          tar -xzf intsdk.tar.gz intsdk
-          chmod +x intsdk
-          sudo mv intsdk /usr/local/bin/intsdk
+          mkdir -p intsdk-extracted
+          tar -xzf intsdk.tar.gz -C intsdk-extracted
+          chmod +x intsdk-extracted/intsdk
+          sudo mv intsdk-extracted/intsdk /usr/local/bin/intsdk
           intsdk --version
 
       - name: Set up publishing identity
