@@ -1,0 +1,23 @@
+[template]
+description = "ECS Kestby P1 to Kestby P3"
+
+[simulation]
+
+[[simulation.point]]
+tiploc = "KESTBY"
+dep = "1"
+plat = 1
+activities = ["reverse"]
+
+[[simulation.point]]
+tiploc = "KSTBY28"
+arr = "1H"
+dep = "3"
+activities = ["reverse"]
+
+[[simulation.point]]
+tiploc = "KESTBY"
+arr = "4"
+plat = 3
+
+[simulation.terminates]

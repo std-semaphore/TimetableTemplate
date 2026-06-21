@@ -1,0 +1,26 @@
+[diagram]
+allocation = [
+    { consist = "142", weight = 80 },
+    { consist = "150", weight = 20 },
+]
+
+set_swap_pool = [
+    { consist = "142", weight = 80 },
+    { consist = "150", weight = 20 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.30
+disruption_pct = 0.10
+set_swap_pct = 0.10
+
+[[service]]
+headcode = "2B01"
+template = "2B-in"
+departs = "1239"
+
+[[service]]
+headcode = "2B02"
+template = "2B-out"
+departs = "1339"

@@ -1,0 +1,31 @@
+[template]
+description = "Anserham to Aireborough"
+operator = "TransPennine Express"
+
+[static]
+ANS = { dep = "0" }
+HBF = { arr = "6", dep = "6H" }
+SLW = { arr = "11", dep = "11H" }
+FBD = { arr = "16", dep = "16H" }
+HSM = { arr = "21", dep = "21H" }
+KBY = { sim = true }
+BRW = { arr = "31", dep = "31H" }
+CLM = { arr = "36", dep = "36H" }
+HBY = { arr = "41", dep = "41H" }
+CST = { arr = "46", dep = "46H" }
+MFT = { arr = "51", dep = "51H" }
+AIR = { arr = "57" }
+
+[simulation]
+
+[simulation.enters]
+section = "DM_6"
+time = "24"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+arr = "26"
+dep = "26H"
+plat = 2
+
+[simulation.exits]

@@ -1,0 +1,96 @@
+[diagram]
+allocation = [
+    { consist = "185", weight = 50 },
+    { consist = "2x185", weight = 50 },
+]
+
+set_swap_pool = [
+    { consist = "185", weight = 50 },
+    { consist = "2x185", weight = 50 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.30
+disruption_pct = 0.10
+set_swap_pct = 0.10
+
+[[service]]
+headcode = "1T01"
+template = "1T-in"
+departs = "0719"
+
+[[service]]
+headcode = "1T02"
+template = "1T-out"
+departs = "0810"
+
+[[service]]
+headcode = "1T03"
+template = "1T-in"
+departs = "0919"
+
+[[service]]
+headcode = "1T04"
+template = "1T-out"
+departs = "1010"
+
+[[service]]
+headcode = "1T05"
+template = "1T-in"
+departs = "1119"
+
+[[service]]
+headcode = "1T06"
+template = "1T-out"
+departs = "1210"
+
+[[service]]
+headcode = "1T07"
+template = "1T-in"
+departs = "1319"
+
+[[service]]
+headcode = "1T08"
+template = "1T-out"
+departs = "1410"
+
+[[service]]
+headcode = "1T09"
+template = "1T-in"
+departs = "1519"
+
+[[service]]
+headcode = "1T10"
+template = "1T-out"
+departs = "1610"
+
+[[service]]
+headcode = "1T11"
+template = "1T-in"
+departs = "1719"
+
+[[service]]
+headcode = "1T12"
+template = "1T-out"
+departs = "1810"
+
+[[service]]
+headcode = "1T13"
+template = "1T-in"
+departs = "1919"
+
+[[service]]
+headcode = "1T14"
+template = "1T-out"
+departs = "2010"
+
+[[service]]
+headcode = "1T15"
+template = "1T-in"
+departs = "2119"
+
+[[service]]
+headcode = "1T16"
+template = "1T-out"
+departs = "2210"

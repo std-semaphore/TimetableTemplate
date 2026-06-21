@@ -1,0 +1,4 @@
+name = "Kestby"
+
+[[station]]
+crs = "KBY"

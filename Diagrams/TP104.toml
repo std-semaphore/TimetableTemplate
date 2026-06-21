@@ -1,0 +1,66 @@
+[diagram]
+allocation = [
+    { consist = "185", weight = 50 },
+    { consist = "2x185", weight = 50 },
+]
+
+set_swap_pool = [
+    { consist = "185", weight = 50 },
+    { consist = "2x185", weight = 50 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.30
+disruption_pct = 0.10
+set_swap_pct = 0.10
+
+[[service]]
+headcode = "2T02"
+template = "2T-in"
+departs = "0824"
+
+[[service]]
+headcode = "2T05"
+template = "2T-out"
+departs = "0934"
+
+[[service]]
+headcode = "2T08"
+template = "2T-in"
+departs = "1124"
+
+[[service]]
+headcode = "2T11"
+template = "2T-out"
+departs = "1234"
+
+[[service]]
+headcode = "2T14"
+template = "2T-in"
+departs = "1424"
+
+[[service]]
+headcode = "2T17"
+template = "2T-out"
+departs = "1534"
+
+[[service]]
+headcode = "2T20"
+template = "2T-in"
+departs = "1724"
+
+[[service]]
+headcode = "2T23"
+template = "2T-out"
+departs = "1834"
+
+[[service]]
+headcode = "2T26"
+template = "2T-in"
+departs = "2024"
+
+[[service]]
+headcode = "2T29"
+template = "2T-out"
+departs = "2134"

@@ -1,0 +1,14 @@
+description = "Class 155 Super Sprinter"
+units = ["Class155"]
+
+[activities.reverse]
+min = 30
+max = 50
+
+[activities.attach]
+min = 45
+max = 75
+
+[activities.detach]
+min = 30
+max = 45

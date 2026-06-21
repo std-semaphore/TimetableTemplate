@@ -1,0 +1,25 @@
+[template]
+description = "Aireborough to Anserham"
+operator = "TransPennine Express"
+
+[static]
+AIR = { dep = "0" }
+MFT = { arr = "5", dep = "5H" }
+CLM = { arr = "12", dep = "12H" }
+HSM = { arr = "23", dep = "23H" }
+SLW = { arr = "30", dep = "30H" }
+ANS = { arr = "38" }
+
+[simulation]
+
+[simulation.enters]
+section = "UM_1"
+time = "16H"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+pass = true
+dep = "18H"
+plat = 1
+
+[simulation.exits]

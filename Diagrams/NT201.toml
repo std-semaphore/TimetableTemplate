@@ -1,0 +1,116 @@
+[diagram]
+allocation = [
+    { consist = "153", weight = 70 },
+    { consist = "155", weight = 20 },
+    { consist = "2x153", weight = 10 },
+]
+
+set_swap_pool = [
+    { consist = "153", weight = 70 },
+    { consist = "155", weight = 20 },
+    { consist = "2x153", weight = 10 }
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.30
+disruption_pct = 0.10
+set_swap_pct = 0.10
+
+[[service]]
+headcode = "5N01"
+template = "KSTBYP1-KSTBYP3"
+departs = "0537"
+
+[[service]]
+headcode = "2C01"
+template = "2C-out"
+departs = "0656"
+
+[[service]]
+headcode = "2C02"
+template = "2C-in"
+departs = "0756"
+
+[[service]]
+headcode = "2C03"
+template = "2C-out"
+departs = "0856"
+
+[[service]]
+headcode = "2C04"
+template = "2C-in"
+departs = "0956"
+
+[[service]]
+headcode = "2C05"
+template = "2C-out"
+departs = "1056"
+
+[[service]]
+headcode = "2C06"
+template = "2C-in"
+departs = "1156"
+
+[[service.exception]]
+tiploc = "KESTBY"
+plat = 1
+
+[[service]]
+headcode = "5N02"
+template = "KSTBYP1-KSTBYSDG"
+departs = "1205"
+
+[[service]]
+headcode = "5N03"
+template = "KSTBYSDG-KSTBYP2"
+departs = "1540"
+
+[[service]]
+headcode = "2C07"
+template = "2C-out"
+departs = "1556"
+
+[[service]]
+headcode = "2C08"
+template = "2C-in"
+departs = "1656"
+
+[[service]]
+headcode = "2C09"
+template = "2C-out"
+departs = "1756"
+
+[[service]]
+headcode = "2C10"
+template = "2C-in"
+departs = "1856"
+
+[[service]]
+headcode = "2C11"
+template = "2C-out"
+departs = "1956"
+
+[[service]]
+headcode = "2C12"
+template = "2C-in"
+departs = "2056"
+
+[[service]]
+headcode = "2C13"
+template = "2C-out"
+departs = "2156"
+
+[[service]]
+headcode = "2C14"
+template = "2C-in"
+departs = "2256"
+
+[[service]]
+headcode = "2C15"
+template = "2C-in"
+departs = "2321"
+
+[[service.exception]]
+tiploc = "KESTBY"
+plat = 1

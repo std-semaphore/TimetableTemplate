@@ -1,0 +1,17 @@
+description = "2x Class 185 Desiro"
+units = [
+    "Class185",
+    "Class185",
+]
+
+[activities.reverse]
+min = 45
+max = 75
+
+[activities.attach]
+min = 75
+max = 90
+
+[activities.detach]
+min = 60
+max = 75

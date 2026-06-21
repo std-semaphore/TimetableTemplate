@@ -1,0 +1,81 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  INTSDK_REPO: std-semaphore/interlocked-sdk
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install intsdk
+        run: |
+          set -euo pipefail
+          url=$(curl -fsSL "https://api.github.com/repos/${INTSDK_REPO}/releases/latest" \
+            | grep -oP '"browser_download_url":\s*"\K[^"]*linux_amd64\.tar\.gz')
+          if [ -z "$url" ]; then
+            echo "::error::Couldn't find a linux_amd64 release asset for ${INTSDK_REPO}"
+            exit 1
+          fi
+          curl -fL "$url" -o intsdk.tar.gz
+          tar -xzf intsdk.tar.gz intsdk
+          chmod +x intsdk
+          sudo mv intsdk /usr/local/bin/intsdk
+          intsdk --version
+
+      - name: Set up publishing identity
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.intsdk
+          cat > ~/.intsdk/credentials.toml <<EOF
+          author_id = "${INTSDK_AUTHOR_ID}"
+          private_key = "${INTSDK_PRIVATE_KEY}"
+          EOF
+          chmod 600 ~/.intsdk/credentials.toml
+        env:
+          INTSDK_AUTHOR_ID: ${{ secrets.INTSDK_AUTHOR_ID }}
+          INTSDK_PRIVATE_KEY: ${{ secrets.INTSDK_PRIVATE_KEY }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify manifest version matches tag
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#v}"
+          manifest_version=$(python3 -c '
+          import tomllib, sys
+          with open("manifest.toml", "rb") as f:
+              data = tomllib.load(f)
+          print(data["manifest"]["version"])
+          ')
+          if [ "$tag" != "$manifest_version" ]; then
+            echo "::error::Tag v${tag} doesn't match manifest.toml version ${manifest_version}"
+            exit 1
+          fi
+
+      - name: Compile
+        run: intsdk compile --out timetable.zip
+
+      - name: Publish
+        run: intsdk publish
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: timetable.zip
+          generate_release_notes: true
+
+      - name: Clear credentials
+        if: always()
+        run: rm -rf ~/.intsdk

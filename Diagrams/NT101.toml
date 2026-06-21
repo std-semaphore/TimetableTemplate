@@ -1,0 +1,106 @@
+[diagram]
+allocation = [
+    { consist = "156", weight = 50 },
+    { consist = "158", weight = 30 },
+    { consist = "142", weight = 20 },
+    { diagram = "NT201" }
+]
+
+set_swap_pool = [
+    { consist = "156", weight = 50 },
+    { consist = "158", weight = 25 },
+    { consist = "142", weight = 20 },
+    { consist = "150", weight = 5 }
+]
+
+[[service]]
+headcode = "2N01"
+template = "2N-out"
+departs = "0529"
+
+[service.activity.branch_shuttle_detach]
+detach_unit = 2
+forms = "5N01"
+
+[[service]]
+headcode = "2N03"
+template = "2N-in"
+departs = "0636"
+
+[[service]]
+headcode = "2N05"
+template = "2N-out"
+departs = "0751"
+
+[[service]]
+headcode = "2N07"
+template = "2N-in"
+departs = "0858"
+
+[[service]]
+headcode = "2N09"
+template = "2N-out"
+departs = "1013"
+
+[[service]]
+headcode = "2N12"
+template = "2N-in"
+departs = "1131"
+
+[[service]]
+headcode = "2N14"
+template = "2N-out"
+departs = "1246"
+
+[[service]]
+headcode = "2N16"
+template = "2N-in"
+departs = "1353"
+
+[[service]]
+headcode = "2N18"
+template = "2N-out"
+departs = "1508"
+
+[[service]]
+headcode = "2N19"
+template = "2N-in"
+departs = "1612"
+
+[[service]]
+headcode = "2N21"
+template = "2N-out"
+departs = "1727"
+
+[[service]]
+headcode = "2N23"
+template = "2N-in"
+departs = "1834"
+
+[[service]]
+headcode = "2N25"
+template = "2N-out"
+departs = "1949"
+
+[[service]]
+headcode = "2N27"
+template = "2N-in"
+departs = "2052"
+
+[[service]]
+headcode = "2N28"
+template = "2N-out"
+departs = "2313"
+
+[service.activity.branch_shuttle_attach]
+joins = "2C15"
+
+[[service.exception]]
+tiploc = "KESTBY"
+dep = "41H"
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.30
+disruption_pct = 0.10
+set_swap_pct = 0.10
