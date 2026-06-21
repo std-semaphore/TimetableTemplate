@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 env:
-  INTSDK_REPO: std-semaphore/interlocked-sdk
+  INTSDK_REPO: std-semaphore/InterlockedSDK
 
 jobs:
   publish:
