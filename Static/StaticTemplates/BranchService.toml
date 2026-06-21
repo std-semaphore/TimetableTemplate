@@ -1,0 +1,11 @@
+[staticTemplate]
+description = "Bluewall-on-sea to Anserham"
+timing_load = "75mph Northern Sprinter 150/153/155/156"
+
+[beforeSimulatedArea]
+BOS = { travel_time = "15H", dwell = "0H" }
+
+[afterSimulatedArea]
+HSM = { travel_time = "3H", dwell = "0H" }
+SLW = { travel_time = "4", dwell = "0H"  }
+ANS = { travel_time = "5", dwell = "0H" }

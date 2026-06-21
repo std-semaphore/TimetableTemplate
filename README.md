@@ -1,4 +1,3 @@
-
 # Timetable Template
 
 ## About the included timetable
