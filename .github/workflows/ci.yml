@@ -21,30 +21,20 @@ jobs:
         run: |
           set -euo pipefail
 
-          release_json=$(curl -fsSL \
-            -H "Authorization: Bearer ${INTSDK_REPO_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${INTSDK_REPO}/releases/latest")
+          url=$(curl -fsSL "https://api.github.com/repos/${INTSDK_REPO}/releases/latest" \
+            | jq -r '.assets[] | select(.name | test("linux_amd64.*\\.tar\\.gz$")) | .browser_download_url' \
+            | head -n1)
 
-          asset_id=$(echo "$release_json" | jq -r '.assets[] | select(.name | test("linux_amd64.*\\.tar\\.gz$")) | .id' | head -n1)
-
-          if [ -z "$asset_id" ] || [ "$asset_id" = "null" ]; then
+          if [ -z "$url" ]; then
             echo "::error::Couldn't find a linux_amd64 release asset for ${INTSDK_REPO}"
             exit 1
           fi
 
-          curl -fL \
-            -H "Authorization: Bearer ${INTSDK_REPO_TOKEN}" \
-            -H "Accept: application/octet-stream" \
-            "https://api.github.com/repos/${INTSDK_REPO}/releases/assets/${asset_id}" \
-            -o intsdk.tar.gz
-
+          curl -fL "$url" -o intsdk.tar.gz
           tar -xzf intsdk.tar.gz intsdk
           chmod +x intsdk
           sudo mv intsdk /usr/local/bin/intsdk
           intsdk --version
-        env:
-          INTSDK_REPO_TOKEN: ${{ secrets.INTSDK_REPO_TOKEN }}
 
       - name: Set up publishing identity
         run: |
