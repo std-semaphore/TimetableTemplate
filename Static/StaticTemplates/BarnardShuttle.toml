@@ -1,0 +1,9 @@
+[staticTemplate]
+description = "Barnard Shuttle - Kestby to Barnard Castle"
+timing_load = "75mph Super Sprinter 150/153/155/156"
+
+[afterSimulatedArea]
+WGL = { travel_time = "4H", dwell = "0H" }
+STE = { travel_time = "3H", dwell = "0H" }
+ELD = { travel_time = "4H", dwell = "0H" }
+BNC = { travel_time = "5H", dwell = "0H" }

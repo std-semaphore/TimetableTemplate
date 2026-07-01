@@ -1,0 +1,11 @@
+[staticTemplate]
+description = "TPE - Aireborough to Anserham Central"
+timing_load = "100mph Desiro 185"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "0H", dwell = "0H" }
+MTF = { travel_time = "8H", dwell = "0H" }
+
+[afterSimulatedArea]
+SLW = { travel_time = "10H", dwell = "0H" }
+ANC = { travel_time = "18H", dwell = "0H" }
