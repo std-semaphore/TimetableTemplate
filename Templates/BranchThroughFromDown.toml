@@ -1,0 +1,21 @@
+[template]
+description = "Branch through (down)"
+
+[simulation]
+
+[simulation.enters]
+section = "DM_6"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 2
+dwell = "1"
+
+[[simulation.point]]
+tiploc = "KMTHHLT"
+plat = 1
+stop_pct = 75.0
+path = "DB"
+dwell = "0H"
+
+[simulation.exits]

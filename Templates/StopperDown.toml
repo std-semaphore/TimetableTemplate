@@ -1,0 +1,17 @@
+[template]
+description = "Kestby stopper (down)"
+
+[simulation]
+
+[simulation.enters]
+section = "DM_6"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 2
+dwell = "1"
+
+[[simulation.point]]
+path = "DM"
+
+[simulation.exits]
