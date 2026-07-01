@@ -1,0 +1,93 @@
+[profile]
+description = "Class 150/153/155/156 DMU at 75mph"
+units = ["Class142", "Class150", "Class153", "Class155", "Class156", "Class 158"]
+
+[[segment]]
+route = "DM_6:UM_1"
+stop = "4H"
+pass = "3H"
+
+[[segment]]
+route = "UM_1:KESTBY"
+stop = "3H"
+pass = "2H"
+
+[[segment]]
+route = "DM_6:KESTBY"
+stop = "3H"
+pass = "2H"
+
+[[segment]]
+route = "Branch:KMTHHLT"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "Branch:KESTBY"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KMTHHLT:KESTBY"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KESTBY:KSBYSDG"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KESTBY:KSTBY28"
+stop = "1H"
+pass = "1H"
+
+[[segment]]
+route = "KESTBY:KSTBY29"
+stop = "1H"
+pass = "1H"
+
+[[segment]]
+route = "KSTBY29:KSBYSDG"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "UM_1:KSTBY29"
+stop = "3H"
+pass = "2H"
+
+[[segment]]
+route = "UM_1:KSBYSDG"
+stop = "3H"
+pass = "2H"
+
+[[segment]]
+route = "DM_6:KSTBY28"
+stop = "3H"
+pass = "2H"
+
+[[segment]]
+route = "Branch:KSTBY29"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "Branch:KSBYSDG"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KMTHHLT:KSTBY28"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KMTHHLT:KSTBY29"
+stop = "2H"
+pass = "1H"
+
+[[segment]]
+route = "KMTHHLT:KSBYSDG"
+stop = "2H"
+pass = "1H"
