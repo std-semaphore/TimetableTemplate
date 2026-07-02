@@ -1,0 +1,22 @@
+[staticTemplate]
+description = "Northern Sparrow Line Stopper - Aireborough to Anserham Agincourt Square"
+timing_load = "75mph Super Sprinter 150/153/155/156"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "0H", dwell = "0H" }
+SBR = { travel_time = "4H", dwell = "0H" }
+MTF = { travel_time = "5H", dwell = "0H" }
+CKS = { travel_time = "4H", dwell = "0H" }
+HMB = { travel_time = "5H", dwell = "0H" }
+CLM = { travel_time = "6H", dwell = "0H" }
+BWK = { travel_time = "7H", dwell = "0H" }
+
+[afterSimulatedArea]
+HSM = { travel_time = "6H", dwell = "0H" }
+FBR = { travel_time = "5H", dwell = "0H" }
+SLW = { travel_time = "4H", dwell = "0H" }
+HPB = { travel_time = "5H", dwell = "0H" }
+CTN = { travel_time = "4H", dwell = "0H" }
+NWC = { travel_time = "4H", dwell = "0H" }
+ANE = { travel_time = "4H", dwell = "0H" }
+AAS = { travel_time = "4H", dwell = "0H" }

@@ -1,0 +1,17 @@
+[template]
+description = "P1 to Kestby Siding"
+
+[simulation]
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 1
+
+[[simulation.point]]
+tiploc = "KSTBY29"
+activities = ["reverse"]
+dwell = "2H"
+path = "UM"
+
+[[simulation.point]]
+tiploc = "KSBYSDG"

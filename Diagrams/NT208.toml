@@ -1,0 +1,45 @@
+[diagram]
+allocation = [
+    { consist = "156", weight = 55 },
+    { consist = "158", weight = 45 },
+]
+set_swap_pool = [
+    { consist = "156", weight = 55 },
+    { consist = "158", weight = 45 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.26
+disruption_pct = 0.09
+set_swap_pct = 0.06
+
+[[service]]
+headcode = "2J01"
+template = "BranchThroughFromDown"
+departs = "0657"
+[service.static]
+template = "BarnardBranchThrough"
+
+[[service]]
+headcode = "2J05"
+template = "BranchThroughToDown"
+departs = "1127"
+[service.static]
+template = "BarnardBranchThrough"
+reversed = true
+
+[[service]]
+headcode = "2J08"
+template = "BranchThroughFromDown"
+departs = "1457"
+[service.static]
+template = "BarnardBranchThrough"
+
+[[service]]
+headcode = "2J13"
+template = "BranchThroughToDown"
+departs = "1927"
+[service.static]
+template = "BarnardBranchThrough"
+reversed = true

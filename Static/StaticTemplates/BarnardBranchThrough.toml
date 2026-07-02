@@ -1,0 +1,33 @@
+[staticTemplate]
+description = "Branch through service - Aireborough to Anserham Agincourt Square via Barnard Castle"
+timing_load = "75mph Super Sprinter 150/153/155/156"
+
+[beforeSimulatedArea]
+AIB = { travel_time = "0H", dwell = "0H" }
+SBR = { travel_time = "4H", dwell = "0H" }
+MTF = { travel_time = "5H", dwell = "0H" }
+CKS = { travel_time = "4H", dwell = "0H" }
+HMB = { travel_time = "5H", dwell = "0H" }
+CLM = { travel_time = "6H", dwell = "0H" }
+BWK = { travel_time = "7H", dwell = "0H" }
+
+[afterSimulatedArea]
+WGL = { travel_time = "4H", dwell = "0H" }
+STE = { travel_time = "3H", dwell = "0H" }
+ELD = { travel_time = "4H", dwell = "0H" }
+BNC = { travel_time = "5H", dwell = "0H" }
+BBR = { travel_time = "4H", dwell = "0H" }
+HFD = { travel_time = "5H", dwell = "0H" }
+LPT = { travel_time = "5H", dwell = "0H" }
+GPT = { travel_time = "4H", dwell = "0H" }
+WRW = { travel_time = "7H", dwell = "0H" }
+FLR = { travel_time = "5H", dwell = "0H" }
+BRW = { travel_time = "4H", dwell = "0H" }
+BSP = { travel_time = "4H", dwell = "0H" }
+STL = { travel_time = "4H", dwell = "0H" }
+BGL = { travel_time = "4H", dwell = "0H" }
+KTW = { travel_time = "4H", dwell = "0H" }
+PLW = { travel_time = "3H", dwell = "0H" }
+ABH = { travel_time = "3H", dwell = "0H" }
+ANC = { travel_time = "3H", dwell = "0H" }
+AAS = { travel_time = "3H", dwell = "0H" }

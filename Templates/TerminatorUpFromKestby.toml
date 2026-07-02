@@ -1,0 +1,13 @@
+[template]
+description = "Terminator up from kestby"
+
+[simulation]
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 1
+
+[[simulation.point]]
+path = "UM"
+
+[simulation.exits]

@@ -1,0 +1,112 @@
+[diagram]
+allocation = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+set_swap_pool = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.24
+disruption_pct = 0.07
+set_swap_pct = 0.04
+
+[[service]]
+headcode = "2T02"
+template = "StopperDown"
+departs = "0707"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "2T03"
+template = "StopperUp"
+departs = "0802"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T06"
+template = "StopperDown"
+departs = "0907"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "1T10"
+template = "FastUp"
+departs = "1029"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T13"
+template = "FastDown"
+departs = "1135"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "2T13"
+template = "StopperUp"
+departs = "1302"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T16"
+template = "StopperDown"
+departs = "1407"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "1T20"
+template = "FastUp"
+departs = "1529"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T23"
+template = "FastDown"
+departs = "1635"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "1T26"
+template = "FastUp"
+departs = "1741"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "2T26"
+template = "StopperDown"
+departs = "1907"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "2T27"
+template = "StopperUp"
+departs = "2002"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "1T34"
+template = "FastDown"
+departs = "2135"
+[service.static]
+template = "TPEFast"

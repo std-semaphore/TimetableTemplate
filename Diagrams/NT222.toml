@@ -1,0 +1,56 @@
+[diagram]
+allocation = [
+    { consist = "153", weight = 50 },
+    { consist = "155", weight = 50 },
+]
+set_swap_pool = [
+    { consist = "153", weight = 50 },
+    { consist = "155", weight = 50 },
+]
+
+[scenario]
+base_delay = 2
+delayed_pct = 0.11
+disruption_pct = 0.03
+set_swap_pct = 0.1
+
+[[service]]
+headcode = "5F01"
+template = "P1toP3"
+departs = "0630"
+
+[[service]]
+headcode = "2S01"
+template = "BranchShuttleDown"
+departs = "0900"
+[service.static]
+template = "BarnardShuttle"
+
+[service.recurrence]
+every = "120"
+until = "1700"
+headcode_increment = 4
+
+[[service]]
+headcode = "2S04"
+template = "BranchShuttleUp"
+departs = "1031"
+[service.static]
+template = "BarnardShuttle"
+reversed = true
+
+[service.recurrence]
+every = "120"
+until = "1631"
+headcode_increment = 4
+
+[[service]]
+headcode = "2S20"
+template = "BranchShuttleUp"
+departs = "1831"
+[service.static]
+template = "BarnardShuttle"
+reversed = true
+[[service.exception]]
+tiploc = "KESTBY"
+plat = 1

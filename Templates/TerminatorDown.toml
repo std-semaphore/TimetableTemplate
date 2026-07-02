@@ -1,0 +1,13 @@
+[template]
+description = "Kestby down terminator"
+
+[simulation]
+
+[simulation.enters]
+section = "DM_6"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 2
+
+[simulation.terminates]

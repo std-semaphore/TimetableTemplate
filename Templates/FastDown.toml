@@ -1,0 +1,17 @@
+[template]
+description = "Kestby fast (down)"
+
+[simulation]
+
+[simulation.enters]
+section = "DM_6"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 2
+pass = true
+
+[[simulation.point]]
+path = "DM"
+
+[simulation.exits]

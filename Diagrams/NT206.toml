@@ -1,0 +1,101 @@
+[diagram]
+allocation = [
+    { consist = "150", weight = 40 },
+    { consist = "156", weight = 35 },
+    { consist = "2x150", weight = 13 },
+    { consist = "2x156", weight = 12 },
+]
+set_swap_pool = [
+    { consist = "150", weight = 40 },
+    { consist = "156", weight = 35 },
+    { consist = "2x150", weight = 13 },
+    { consist = "2x156", weight = 12 },
+]
+
+[scenario]
+base_delay = 2
+delayed_pct = 0.13
+disruption_pct = 0.03
+set_swap_pct = 0.07
+
+[[service]]
+headcode = "2K08"
+template = "TerminatorDown"
+departs = "0837"
+[service.static]
+template = "KestbyTerminator"
+
+[[service]]
+headcode = "2K09"
+template = "TerminatorUpFromKestby"
+departs = "0900"
+[service.static]
+template = "KestbyTerminator"
+reversed = true
+
+[[service]]
+headcode = "2K17"
+template = "TerminatorDown"
+departs = "1107"
+[service.static]
+template = "KestbyTerminator"
+
+[[service]]
+headcode = "2K18"
+template = "TerminatorUpFromKestby"
+departs = "1130"
+[service.static]
+template = "KestbyTerminator"
+reversed = true
+
+[[service]]
+headcode = "2K27"
+template = "TerminatorDown"
+departs = "1337"
+[service.static]
+template = "KestbyTerminator"
+
+[[service]]
+headcode = "2K28"
+template = "TerminatorUpFromKestby"
+departs = "1400"
+[service.static]
+template = "KestbyTerminator"
+reversed = true
+
+[[service]]
+headcode = "2K37"
+template = "TerminatorDown"
+departs = "1607"
+[service.static]
+template = "KestbyTerminator"
+
+[[service]]
+headcode = "2K38"
+template = "TerminatorUpFromKestby"
+departs = "1630"
+[service.static]
+template = "KestbyTerminator"
+reversed = true
+
+[[service]]
+headcode = "2K46"
+template = "TerminatorDown"
+departs = "1837"
+[service.static]
+template = "KestbyTerminator"
+
+[[service]]
+headcode = "2K49"
+template = "TerminatorUpFromKestby"
+departs = "2030"
+[service.static]
+template = "KestbyTerminator"
+reversed = true
+
+[[service]]
+headcode = "2K54"
+template = "TerminatorDown"
+departs = "2237"
+[service.static]
+template = "KestbyTerminator"

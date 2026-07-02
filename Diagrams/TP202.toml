@@ -1,0 +1,120 @@
+[diagram]
+allocation = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+set_swap_pool = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.22
+disruption_pct = 0.06
+set_swap_pct = 0.04
+
+[[service]]
+headcode = "1T02"
+template = "FastDown"
+departs = "0635"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "1T03"
+template = "FastUp"
+departs = "0729"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T07"
+template = "FastDown"
+departs = "0835"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "2T07"
+template = "StopperUp"
+departs = "1002"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T10"
+template = "StopperDown"
+departs = "1107"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "1T14"
+template = "FastUp"
+departs = "1229"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T17"
+template = "FastDown"
+departs = "1335"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "2T17"
+template = "StopperUp"
+departs = "1502"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T20"
+template = "StopperDown"
+departs = "1607"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "1T24"
+template = "FastUp"
+departs = "1729"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T28"
+template = "FastDown"
+departs = "1835"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "1T29"
+template = "FastUp"
+departs = "1929"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "2T30"
+template = "StopperDown"
+departs = "2107"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "2T31"
+template = "StopperUp"
+departs = "2202"
+[service.static]
+template = "TPESemifast"
+reversed = true
