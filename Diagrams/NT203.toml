@@ -1,15 +1,11 @@
 [diagram]
 allocation = [
     { consist = "150", weight = 40 },
-    { consist = "156", weight = 35 },
-    { consist = "2x150", weight = 13 },
-    { consist = "2x156", weight = 12 },
+    { consist = "142", weight = 35 }
 ]
 set_swap_pool = [
     { consist = "150", weight = 40 },
-    { consist = "156", weight = 35 },
-    { consist = "2x150", weight = 13 },
-    { consist = "2x156", weight = 12 },
+    { consist = "156", weight = 35 }
 ]
 
 [scenario]
