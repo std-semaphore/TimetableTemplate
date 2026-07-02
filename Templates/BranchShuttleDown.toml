@@ -6,6 +6,7 @@ description = "Branch shuttle (down)"
 [[simulation.point]]
 tiploc = "KESTBY"
 plat = 3
+activities = ["reverse"]
 
 [[simulation.point]]
 tiploc = "KMTHHLT"
