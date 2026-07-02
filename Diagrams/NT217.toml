@@ -1,0 +1,69 @@
+[diagram]
+allocation = [
+    { consist = "156", weight = 60 },
+    { consist = "158", weight = 40 },
+]
+set_swap_pool = [
+    { consist = "156", weight = 60 },
+    { consist = "158", weight = 40 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.22
+disruption_pct = 0.06
+set_swap_pct = 0.07
+
+[[service]]
+headcode = "2C02"
+template = "StopperDown"
+departs = "0712"
+[service.static]
+template = "StopperBluewall"
+
+[[service]]
+headcode = "2C09"
+template = "StopperUp"
+departs = "1022"
+[service.static]
+template = "StopperBluewall"
+reversed = true
+
+[[service]]
+headcode = "2C12"
+template = "StopperDown"
+departs = "1212"
+[service.static]
+template = "StopperBluewall"
+
+[[service]]
+headcode = "2C19"
+template = "StopperUp"
+departs = "1522"
+[service.static]
+template = "StopperBluewall"
+reversed = true
+
+[[service]]
+headcode = "2A21"
+template = "StopperDown"
+departs = "1742"
+[service.static]
+template = "StopperAgincourt"
+
+[[service]]
+headcode = "2A24"
+template = "StopperUp"
+departs = "1917"
+[service.static]
+template = "StopperAgincourt"
+reversed = true
+[service.activity.branch_shuttle_attach]
+joins = "2S20"
+
+[[service]]
+headcode = "2C30"
+template = "StopperDown"
+departs = "2112"
+[service.static]
+template = "StopperBluewall"

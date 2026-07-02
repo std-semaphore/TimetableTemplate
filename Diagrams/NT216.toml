@@ -1,0 +1,68 @@
+[diagram]
+allocation = [
+    { consist = "156", weight = 60 },
+    { consist = "158", weight = 40 },
+]
+set_swap_pool = [
+    { consist = "156", weight = 60 },
+    { consist = "158", weight = 40 },
+]
+
+[scenario]
+base_delay = 3
+delayed_pct = 0.19
+disruption_pct = 0.04
+set_swap_pct = 0.05
+
+[[service]]
+headcode = "2C03"
+template = "StopperUp"
+departs = "0722"
+[service.static]
+template = "StopperBluewall"
+reversed = true
+
+[[service]]
+headcode = "2A08"
+template = "StopperDown"
+departs = "0942"
+[service.static]
+template = "StopperAgincourt"
+
+[[service]]
+headcode = "2A10"
+template = "StopperUp"
+departs = "1117"
+[service.static]
+template = "StopperAgincourt"
+reversed = true
+
+[[service]]
+headcode = "2C14"
+template = "StopperDown"
+departs = "1312"
+[service.static]
+template = "StopperBluewall"
+
+[[service]]
+headcode = "2C21"
+template = "StopperUp"
+departs = "1622"
+[service.static]
+template = "StopperBluewall"
+reversed = true
+
+[[service]]
+headcode = "2C24"
+template = "StopperDown"
+departs = "1812"
+[service.static]
+template = "StopperBluewall"
+
+[[service]]
+headcode = "2C31"
+template = "StopperUp"
+departs = "2122"
+[service.static]
+template = "StopperBluewall"
+reversed = true

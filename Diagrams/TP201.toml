@@ -1,0 +1,120 @@
+[diagram]
+allocation = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+set_swap_pool = [
+    { consist = "185", weight = 75 },
+    { consist = "2x185", weight = 25 },
+]
+
+[scenario]
+base_delay = 4
+delayed_pct = 0.23
+disruption_pct = 0.07
+set_swap_pct = 0.04
+
+[[service]]
+headcode = "1T01"
+template = "FastUp"
+departs = "0629"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T04"
+template = "FastDown"
+departs = "0735"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "1T06"
+template = "FastUp"
+departs = "0829"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T09"
+template = "FastDown"
+departs = "0935"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "2T09"
+template = "StopperUp"
+departs = "1102"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T12"
+template = "StopperDown"
+departs = "1207"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "1T16"
+template = "FastUp"
+departs = "1329"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "1T19"
+template = "FastDown"
+departs = "1435"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "2T19"
+template = "StopperUp"
+departs = "1602"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "2T22"
+template = "StopperDown"
+departs = "1707"
+[service.static]
+template = "TPESemifast"
+
+[[service]]
+headcode = "2T23"
+template = "StopperUp"
+departs = "1802"
+[service.static]
+template = "TPESemifast"
+reversed = true
+
+[[service]]
+headcode = "1T30"
+template = "FastDown"
+departs = "1935"
+[service.static]
+template = "TPEFast"
+
+[[service]]
+headcode = "1T31"
+template = "FastUp"
+departs = "2029"
+[service.static]
+template = "TPEFast"
+reversed = true
+
+[[service]]
+headcode = "2T32"
+template = "StopperDown"
+departs = "2207"
+[service.static]
+template = "TPESemifast"
