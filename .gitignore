@@ -1,3 +1,4 @@
 signature.*
 .DS_Store
 output.json
+*.tar.gz
