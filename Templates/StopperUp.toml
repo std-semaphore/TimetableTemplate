@@ -12,6 +12,7 @@ plat = 1
 dwell = "1"
 activities = [
     { type = "detach", id = "branch_shuttle_detach" },
+    { type = "attach", id = "branch_shuttle_attach" },
 ]
 
 [[simulation.point]]

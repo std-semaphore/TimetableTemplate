@@ -1,4 +1,5 @@
 [diagram]
+operator = "Northern"
 allocation = [
     { consist = "150", weight = 40 },
     { consist = "142", weight = 35 }

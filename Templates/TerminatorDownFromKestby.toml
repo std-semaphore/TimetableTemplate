@@ -6,9 +6,6 @@ description = "Terminator down from kestby"
 [[simulation.point]]
 tiploc = "KESTBY"
 plat = 2
-activities = [
-    { type = "attach", id = "branch_shuttle_attach" },
-]
 
 [[simulation.point]]
 path = "DM"

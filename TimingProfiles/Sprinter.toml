@@ -1,6 +1,6 @@
 [profile]
 description = "Class 150/153/155/156 DMU at 75mph"
-units = ["Class142", "Class150", "Class153", "Class155", "Class156", "Class 158"]
+units = ["Class142", "Class150", "Class153", "Class155", "Class156", "Class158"]
 
 [[segment]]
 route = "DM_6:UM_1"

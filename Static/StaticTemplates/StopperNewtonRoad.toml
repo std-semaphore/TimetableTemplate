@@ -3,7 +3,7 @@ description = "Northern Sparrow Line Stopper - Aireborough to Newton Road"
 timing_load = "75mph Super Sprinter 150/153/155/156"
 
 [beforeSimulatedArea]
-AIB = { travel_time = "0H", dwell = "0H" }
+AIB = { travel_time = "6H", dwell = "0H" }
 SBR = { travel_time = "4H", dwell = "0H" }
 MTF = { travel_time = "5H", dwell = "0H" }
 CKS = { travel_time = "4H", dwell = "0H" }

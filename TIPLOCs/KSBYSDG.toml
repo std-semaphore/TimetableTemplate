@@ -1,4 +1,4 @@
 name = "Kestby Siding"
 
-[[object]]
+[object]
 object = "SidingBuffer"

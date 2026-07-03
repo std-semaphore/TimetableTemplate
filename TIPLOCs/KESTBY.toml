@@ -1,4 +1,4 @@
 name = "Kestby"
 
-[[station]]
+[station]
 crs = "KBY"
