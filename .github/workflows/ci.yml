@@ -70,7 +70,7 @@ jobs:
           fi
 
       - name: Compile
-        run: intsdk compile --out timetable.zip
+        run: intsdk compile --out timetable.tar.gz
 
       - name: Publish
         run: intsdk publish
@@ -78,7 +78,7 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: timetable.zip
+          files: timetable.tar.gz
           generate_release_notes: true
 
       - name: Clear credentials
