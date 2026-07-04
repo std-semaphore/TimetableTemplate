@@ -1,7 +1,7 @@
 [manifest]
 id = "wuzzer-timetable"
 name = "Wuzzer's Timetable"
-version = "1.0.8"
+version = "1.0.9"
 author = "beewuzzer"
 
 [target]
