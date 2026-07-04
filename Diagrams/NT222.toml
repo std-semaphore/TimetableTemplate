@@ -26,7 +26,6 @@ template = "BranchShuttleDown"
 departs = "0900"
 [service.static]
 template = "BarnardShuttle"
-
 [service.recurrence]
 every = "120"
 until = "1700"
@@ -39,7 +38,6 @@ departs = "1031"
 [service.static]
 template = "BarnardShuttle"
 reversed = true
-
 [service.recurrence]
 every = "120"
 until = "1631"
