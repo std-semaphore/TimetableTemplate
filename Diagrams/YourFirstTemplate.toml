@@ -40,7 +40,7 @@ template = "BranchKestby"
 # This defines the movement within Kestby, inside the Templates/ folder
 timing = "1100H"
 # This project is setup for Kestby to be the timing anchor
-[static]
+[service.static]
 template = "KestbyToBarnardCastle"
 # This is the Kestby to Barnard castle static template
 reversed = true
