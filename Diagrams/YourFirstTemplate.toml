@@ -1,0 +1,42 @@
+# https://github.com/std-semaphore/TimetableTemplate/wiki
+# The Interlocked wiki has documentation on all aspects of the timetable
+
+[diagram]
+# What operator runs your route, simply used for things such as departure boards
+operator = "Northern"
+
+# What your route will be allocated
+allocation = [
+    { consist = "142", weight = 100 },
+    # A pacer is more likely than a 156.. sadly 
+    { consist = "156", weight = 50 }
+]
+
+# Your train may require swapping later in the simulation
+# This is the pool it chooses from, it's not the 'traditional' allocation
+set_swap_pool = [
+    { consist = "156", weight = 50 },
+    { consist = "142", weight = 20 },
+    { consist = "150", weight = 5 }
+    # A pacer
+]
+
+[scenario]
+base_delay = 4
+# The regular delay this diagram might encounter
+delayed_pct = 0.30
+# The % of the time the diagram actually experiences the regular delay
+disruption_pct = 0.10
+# The % of extreme delay or cancellation
+set_swap_pct = 0.10
+# The % that the set swap pool is activated during the day
+
+# Our first service!
+# This is a service from Barnard Castle to Kestby, arriving at 11:00:30
+[[service]]
+headcode = "2N01"
+# Our headcode is used to identify our train in the simulation
+template = "BranchKestby"
+# This defines the movement within Kestby, inside the Templates/ folder
+timing = "1100H"
+# This project is setup for Kestby to be the timing anchor

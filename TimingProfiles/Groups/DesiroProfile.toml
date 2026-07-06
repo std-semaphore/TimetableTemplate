@@ -1,0 +1,11 @@
+Units = ["Class185"]
+MassTonnes = 170.0
+MaxSpeedMph = 100.0
+MaxTractiveEffortKn = 240.0
+ContinuousPowerKw = 1600.0
+TractionRampUpTime = 2.0
+TractionRampDownTime = 1.5
+ServiceBrakeRateMps2 = 1.1
+EmergencyBrakeRateMps2 = 1.3
+BaseResistanceN = 3.0
+AeroDragCoefficient = 0.5

@@ -1,0 +1,11 @@
+Units = ["Class142","Class150","Class153","Class155","Class156","Class158"]
+MassTonnes = 76.7
+MaxSpeedMph = 75.0
+MaxTractiveEffortKn = 130.0
+ContinuousPowerKw = 420.0
+TractionRampUpTime = 2.0
+TractionRampDownTime = 1.5
+ServiceBrakeRateMps2 = 1.0
+EmergencyBrakeRateMps2 = 1.2
+BaseResistanceN = 2.2
+AeroDragCoefficient = 0.55

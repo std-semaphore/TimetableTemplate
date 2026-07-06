@@ -1,16 +1,10 @@
 [template]
-description = "Branch through (to down)"
+description = "Kestby stopper (up)"
 
 [simulation]
 
 [simulation.enters]
-section = "Branch"
-
-[[simulation.point]]
-tiploc = "KMTHHLT"
-plat = 1
-stop_pct = 75.0
-dwell = "0H"
+section = "UM_1"
 
 [[simulation.point]]
 tiploc = "KESTBY"

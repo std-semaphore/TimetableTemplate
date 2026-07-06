@@ -1,0 +1,21 @@
+[template]
+description = "Kestby P1 to P2"
+
+[simulation]
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 1
+
+[[simulation.point]]
+tiploc = "KSTBY29"
+activities = ["reverse"]
+dwell = "2H"
+path = "UM"
+
+[[simulation.point]]
+tiploc = "KESTBY"
+plat = 2
+path = "DM"
+
+[simulation.terminates]

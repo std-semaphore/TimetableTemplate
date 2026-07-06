@@ -1,0 +1,279 @@
+[profile]
+description = "DesiroProfile generated timing profile"
+units = ["Class185"]
+
+[[segment]]
+route = "Branch:DM_1"
+stop = "3Q"
+pass = "1Q"
+
+[[segment]]
+route = "Branch:DM_6"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "Branch:KESTBY"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "Branch:KMTHHLT"
+stop = "0H"
+pass = "0Q"
+
+[[segment]]
+route = "Branch:KSBYSDG"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "Branch:KSTBY28"
+stop = "2Q"
+pass = "0T"
+
+[[segment]]
+route = "Branch:KSTBY29"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "Branch:Points16"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "Branch:UM_1"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "Branch:UM_5"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "DM_1:DM_6"
+stop = "3T"
+pass = "1T"
+
+[[segment]]
+route = "DM_1:KESTBY"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_1:KMTHHLT"
+stop = "3Q"
+pass = "1Q"
+
+[[segment]]
+route = "DM_1:KSBYSDG"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_1:KSTBY28"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "DM_1:KSTBY29"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_1:Points16"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_1:UM_1"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "DM_1:UM_5"
+stop = "3T"
+pass = "1T"
+
+[[segment]]
+route = "DM_6:KESTBY"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_6:KMTHHLT"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "DM_6:KSBYSDG"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_6:KSTBY28"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_6:KSTBY29"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "DM_6:Points16"
+stop = "2T"
+pass = "0T"
+
+[[segment]]
+route = "DM_6:UM_1"
+stop = "3T"
+pass = "1T"
+
+[[segment]]
+route = "DM_6:UM_5"
+stop = "3T"
+pass = "1H"
+
+[[segment]]
+route = "KESTBY:KMTHHLT"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "KESTBY:KSBYSDG"
+stop = "1"
+pass = "0Q"
+
+[[segment]]
+route = "KESTBY:KSTBY28"
+stop = "1Q"
+pass = "0Q"
+
+[[segment]]
+route = "KESTBY:KSTBY29"
+stop = "0H"
+pass = "0Q"
+
+[[segment]]
+route = "KESTBY:Points16"
+stop = "0T"
+pass = "0Q"
+
+[[segment]]
+route = "KESTBY:UM_1"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KESTBY:UM_5"
+stop = "2T"
+pass = "0T"
+
+[[segment]]
+route = "KMTHHLT:KSBYSDG"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "KMTHHLT:KSTBY28"
+stop = "2Q"
+pass = "0T"
+
+[[segment]]
+route = "KMTHHLT:KSTBY29"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "KMTHHLT:Points16"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "KMTHHLT:UM_1"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "KMTHHLT:UM_5"
+stop = "3H"
+pass = "1H"
+
+[[segment]]
+route = "KSBYSDG:KSTBY28"
+stop = "1H"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSDG:KSTBY29"
+stop = "1"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSDG:Points16"
+stop = "1"
+pass = "0Q"
+
+[[segment]]
+route = "KSBYSDG:UM_1"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KSBYSDG:UM_5"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KSTBY28:KSTBY29"
+stop = "1Q"
+pass = "0Q"
+
+[[segment]]
+route = "KSTBY28:Points16"
+stop = "1Q"
+pass = "0Q"
+
+[[segment]]
+route = "KSTBY28:UM_1"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KSTBY28:UM_5"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KSTBY29:Points16"
+stop = "0H"
+pass = "0Q"
+
+[[segment]]
+route = "KSTBY29:UM_1"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "KSTBY29:UM_5"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "Points16:UM_1"
+stop = "2T"
+pass = "1"
+
+[[segment]]
+route = "Points16:UM_5"
+stop = "2H"
+pass = "0T"
+
+[[segment]]
+route = "UM_1:UM_5"
+stop = "3T"
+pass = "1T"
+

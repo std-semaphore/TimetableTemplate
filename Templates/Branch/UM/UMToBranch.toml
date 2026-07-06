@@ -1,6 +1,9 @@
 [template]
 description = "Branch through (up)"
 
+[static]
+template = "AireboroughToBarnardCastle"
+
 [simulation]
 
 [simulation.enters]
